@@ -3,11 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
   { to: '/', label: 'Inicio' },
-  { to: '/informacion-general', label: 'Información General' },
-  { to: '/actividades', label: 'Actividades' },
-  { to: '/espacios', label: 'Espacios' },
-  { to: '/informacion', label: 'Información' },
-  { to: '/mapa', label: 'Mapa' }
+  { to: '/finca', label: 'La Finca' },
+  { to: '/espacios', label: 'Espacios y Actividades' },
+  { to: '/tarifas', label: 'Tarifas' },
+  { to: '/ubicacion', label: 'Ubicación' },
 ];
 
 function Navbar({ onReservar }) {
