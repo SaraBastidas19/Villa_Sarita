@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -14,6 +14,10 @@ function App() {
   const [isReservaOpen, setIsReservaOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === '/';
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-crema text-stone-800">
