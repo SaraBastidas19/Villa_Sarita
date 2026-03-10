@@ -25,3 +25,9 @@ body {
 .input {
   @apply w-full rounded-xl border border-stone-200 bg-white px-4 py-3 text-sm text-stone-700 outline-none transition placeholder:text-stone-400 focus:border-hoja focus:ring-2 focus:ring-hoja/20;
 }
+
+.leaflet-container,
+.leaflet-pane,
+.leaflet-control {
+  z-index: 0 !important;
+}

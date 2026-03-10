@@ -15,8 +15,8 @@ function Ubicacion() {
       </div>
 
       {/* Mapa */}
-      <div className="overflow-hidden rounded-2xl shadow-soft">
-        <MapContainer center={fincaPosition} zoom={14} style={{ height: '450px', width: '100%' }}>
+      <div className="relative z-0 overflow-hidden rounded-2xl shadow-soft">
+        <MapContainer className="z-0" center={fincaPosition} zoom={14} style={{ height: '450px', width: '100%' }}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
