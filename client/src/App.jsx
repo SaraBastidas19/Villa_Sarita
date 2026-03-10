@@ -5,11 +5,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ReservaModal from './components/ReservaModal';
 import Home from './pages/Home';
-import InformacionGeneral from './pages/InformacionGeneral';
-import Actividades from './pages/Actividades';
-import Espacios from './pages/Espacios';
-import Informacion from './pages/Informacion';
-import Mapa from './pages/Mapa';
+import LaFinca from './pages/LaFinca';
+import EspaciosActividades from './pages/EspaciosActividades';
+import Tarifas from './pages/Tarifas';
+import Ubicacion from './pages/Ubicacion';
 
 function App() {
   const [isReservaOpen, setIsReservaOpen] = useState(false);
@@ -23,11 +22,10 @@ function App() {
       <main className={isHome ? 'pt-0' : 'pt-20'}>
         <Routes>
           <Route path="/" element={<Home onReservar={() => setIsReservaOpen(true)} />} />
-          <Route path="/informacion-general" element={<InformacionGeneral />} />
-          <Route path="/actividades" element={<Actividades />} />
-          <Route path="/espacios" element={<Espacios onReservar={() => setIsReservaOpen(true)} />} />
-          <Route path="/informacion" element={<Informacion />} />
-          <Route path="/mapa" element={<Mapa />} />
+          <Route path="/finca" element={<LaFinca />} />
+          <Route path="/espacios" element={<EspaciosActividades />} />
+          <Route path="/tarifas" element={<Tarifas />} />
+          <Route path="/ubicacion" element={<Ubicacion />} />
         </Routes>
       </main>
 
