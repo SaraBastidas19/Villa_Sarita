@@ -26,7 +26,7 @@ function Tarifas() {
             zona de juegos, cocina, zona BBQ y espacio de camping bajo techo.
           </p>
           <a
-            href="https://wa.me/573000000000"
+            href="https://wa.me/573132841729"
             target="_blank"
             rel="noreferrer"
             className="mt-2 inline-block rounded-full bg-hoja px-6 py-3 text-center font-semibold text-white transition hover:brightness-110"
