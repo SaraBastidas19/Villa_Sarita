@@ -1,8 +1,10 @@
+const imageBase = `${import.meta.env.BASE_URL}images/gallery`;
+
 const images = [
-  '/images/gallery/galeria-1.jpeg',
-  '/images/gallery/galeria-2.jpeg',
-  '/images/gallery/galeria-3.jpeg',
-  '/images/gallery/galeria-4.jpeg'
+  `${imageBase}/galeria-1.jpeg`,
+  `${imageBase}/galeria-2.jpeg`,
+  `${imageBase}/galeria-3.jpeg`,
+  `${imageBase}/galeria-4.jpeg`
 ];
 
 function Gallery() {

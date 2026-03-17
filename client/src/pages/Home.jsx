@@ -3,6 +3,8 @@ import Gallery from '../components/Gallery';
 import CTAReserva from '../components/CTAReserva';
 
 function Home({ onReservar }) {
+  const escapeImage = `${import.meta.env.BASE_URL}images/home/escape.jpeg`;
+
   return (
     <>
       <HeroSection onReservar={onReservar} />
@@ -19,7 +21,7 @@ function Home({ onReservar }) {
           </div>
 
           <img
-            src="/images/home/escape.jpeg"
+            src={escapeImage}
             alt="Zona de descanso de la finca"
             className="h-72 w-full rounded-2xl object-cover shadow-soft md:h-80"
             loading="lazy"

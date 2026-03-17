@@ -1,33 +1,35 @@
 import { Link } from 'react-router-dom';
 
+const imageBase = `${import.meta.env.BASE_URL}images/activities`;
+
 const espacios = [
   {
     icon: '🏊',
     title: 'Piscina',
     description:
       'Piscina de 11 × 8 metros con profundidad máxima de 1.70 m. Cuenta con sillas, mesas, flotadores y dos baños adicionales en el área. Perfecta para refrescarse y relajarse en familia o con amigos.',
-    image: '/images/activities/piscina.jpeg',
+    image: `${imageBase}/piscina.jpeg`,
   },
   {
     icon: '🎱',
     title: 'Zona de juegos',
     description:
       'Espacio recreativo techado con mesa de billar, bolirana y tejo. Ideal para pasar buenos ratos y compartir momentos divertidos con todo el grupo sin importar la hora del día.',
-    image: '/images/activities/juegos.jpeg',
+    image: `${imageBase}/juegos.jpeg`,
   },
   {
     icon: '🍖',
     title: 'Cocina y zona BBQ',
     description:
       'Cocina completamente equipada con estufa de gas, horno tradicional de leña y todos los utensilios necesarios. La zona BBQ exterior es perfecta para preparar asados y disfrutar al aire libre.',
-    image: '/images/activities/cocina.jpeg',
+    image: `${imageBase}/cocina.jpeg`,
   },
   {
     icon: '🛏️',
     title: 'Habitaciones con baño privado',
     description:
       'Las habitaciones de la finca cuentan con baño privado y ducha caliente. Espacios cómodos y acogedores pensados para el descanso, con capacidad para diferentes tamaños de grupo.',
-    image: '/images/activities/habitaciones.jpeg',
+    image: `${imageBase}/habitaciones.jpeg`,
   },
   {
     icon: '⛺',
@@ -44,14 +46,14 @@ const actividades = [
     title: 'Caminatas a quebradas cercanas',
     description:
       'Desde la finca puedes llegar a pie a quebradas naturales en tan solo 10 a 15 minutos. El recorrido atraviesa caminos rodeados de vegetación y paisajes propios de la región tolimense.',
-    image: '/images/activities/cascadas.jpeg',
+    image: `${imageBase}/cascadas.jpeg`,
   },
   {
     icon: '🌊',
     title: 'Cascadas de Payandé',
     description:
       'A unos 20 minutos caminando desde la finca se encuentran las conocidas cascadas de Payandé. Un destino imperdible para quienes buscan conectarse con la naturaleza y disfrutar de agua cristalina.',
-    image: '/images/activities/cascadas.jpeg',
+    image: `${imageBase}/cascadas.jpeg`,
   },
 ];
 

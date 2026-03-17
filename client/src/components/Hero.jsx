@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 
 function HeroSection({ onReservar }) {
+  const heroImage = `${import.meta.env.BASE_URL}images/hero/inicio.jpeg`;
+
   return (
     <section
       className="relative h-[78vh] min-h-[520px] bg-cover bg-center"
       style={{
-        backgroundImage:
-          "linear-gradient(to right, rgba(0,0,0,.45), rgba(0,0,0,.2)), url('/images/hero/inicio.jpeg')"
+        backgroundImage: `linear-gradient(to right, rgba(0,0,0,.45), rgba(0,0,0,.2)), url('${heroImage}')`
       }}
     >
       <div className="container-base flex h-full items-center">

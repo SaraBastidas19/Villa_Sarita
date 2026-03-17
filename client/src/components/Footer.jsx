@@ -1,9 +1,11 @@
 function Footer() {
+  const logoUrl = `${import.meta.env.BASE_URL}images/logo/logo.png`;
+
   return (
     <footer className="mt-16 bg-black py-10 text-stone-100">
       <div className="container-base flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
-          <img src="/images/logo/logo.png" alt="Logo Villa Sarita" className="h-16 w-auto md:h-20" loading="lazy" />
+          <img src={logoUrl} alt="Logo Villa Sarita" className="h-16 w-auto md:h-20" loading="lazy" />
           <div>
             <h3 className="text-lg font-semibold">Finca Villa Sarita</h3>
             <p className="text-sm text-stone-300">Turismo rural, glamping y conexión con la naturaleza.</p>

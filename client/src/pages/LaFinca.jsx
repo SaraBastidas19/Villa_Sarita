@@ -1,4 +1,6 @@
 function LaFinca() {
+  const fincaImage = `${import.meta.env.BASE_URL}images/general/finca-general.jpeg`;
+
   const amenities = [
     {
       icon: '📶',
@@ -50,7 +52,7 @@ function LaFinca() {
         <h1 className="section-title mb-10">Información general de la finca</h1>
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <img
-            src="/images/general/finca-general.jpeg"
+            src={fincaImage}
             alt="Finca Villa Sarita"
             className="h-96 w-full rounded-2xl object-cover shadow-soft"
           />

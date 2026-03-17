@@ -11,12 +11,13 @@ const links = [
 
 function Navbar({ onReservar }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const logoUrl = `${import.meta.env.BASE_URL}images/logo/logo.png`;
 
   return (
     <header className="fixed top-0 z-[1200] w-full bg-black/85">
       <div className="container-base flex h-20 items-center justify-between gap-4">
         <NavLink to="/" className="transition hover:opacity-90" aria-label="Ir al inicio">
-          <img src="/images/logo/logo.png" alt="Logo Villa Sarita" className="h-12 w-auto md:h-14" loading="eager" />
+          <img src={logoUrl} alt="Logo Villa Sarita" className="h-12 w-auto md:h-14" loading="eager" />
         </NavLink>
 
         <nav className="hidden flex-1 items-center justify-evenly px-6 lg:flex">
