@@ -34,7 +34,7 @@ function App() {
       </main>
 
       <a
-        href="https://wa.me/573000000000"
+        href="https://wa.me/573132841729"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-5 right-5 z-40 rounded-full bg-green-500 px-4 py-3 text-sm font-semibold text-white shadow-soft transition hover:scale-105"
