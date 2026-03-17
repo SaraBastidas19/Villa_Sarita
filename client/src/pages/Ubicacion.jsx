@@ -27,15 +27,25 @@ function Ubicacion() {
         </MapContainer>
       </div>
 
-      {/* Botón cómo llegar */}
-      <a
-        href={`https://www.google.com/maps/dir/?api=1&destination=${fincaPosition[0]},${fincaPosition[1]}`}
-        target="_blank"
-        rel="noreferrer"
-        className="inline-block rounded-full bg-bosque px-6 py-3 font-semibold text-white transition hover:bg-hoja"
-      >
-        Cómo llegar →
-      </a>
+      {/* Botones de navegación */}
+      <div className="flex flex-wrap gap-3">
+        <a
+          href={`https://www.google.com/maps/dir/?api=1&destination=${fincaPosition[0]},${fincaPosition[1]}`}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full bg-bosque px-6 py-3 font-semibold text-white transition hover:bg-hoja"
+        >
+          🗺️ Google Maps
+        </a>
+        <a
+          href={`https://waze.com/ul?ll=${fincaPosition[0]},${fincaPosition[1]}`}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full bg-bosque px-6 py-3 font-semibold text-white transition hover:bg-hoja"
+        >
+          📍 Waze
+        </a>
+      </div>
 
       {/* Detalles de ubicación */}
       <div className="grid gap-4 md:grid-cols-3">
